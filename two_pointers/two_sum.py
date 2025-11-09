@@ -31,7 +31,7 @@ Only one valid answer exists.
 """
 from typing import List;
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
         left,right = 0, len(nums) - 1
         while left < right:
             current_sum = nums[left] + nums[right]
@@ -44,5 +44,5 @@ class Solution:
         return []
     
 test = Solution()
-test_output:List[int] = test.twoSum([2,7,11,15], 9)  # Output: [0, 1]
+test_output:List[int] = test.two_sum([2,7,11,15], 9)  # Output: [0, 1]
 print(test_output)  # Expected output: [0, 1]
